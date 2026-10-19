@@ -1,0 +1,45 @@
+{
+  "name": "@actualwave/react-native-pinned-shortcuts",
+  "version": "0.1.0",
+  "description": "Pin Android launcher shortcuts that open a React Native app on a deep link, with a custom icon.",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "react-native": "src/index.ts",
+  "files": [
+    "src",
+    "android",
+    "react-native.config.js",
+    "LICENSE",
+    "CHANGELOG.md",
+    "!android/build",
+    "!**/.*"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run typecheck"
+  },
+  "keywords": [
+    "react-native",
+    "android",
+    "shortcut",
+    "launcher",
+    "deep-link",
+    "home-screen"
+  ],
+  "author": "Oleg Galaburda <burdiuz@gmail.com> (https://github.com/burdiuz)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/burdiuz/react-native-pinned-shortcuts.git"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.0",
+    "react-native": "0.83.6",
+    "typescript": "^5.9.0"
+  },
+  "sideEffects": false
+}
